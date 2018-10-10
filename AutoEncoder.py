@@ -6,11 +6,11 @@ from keras.callbacks import ModelCheckpoint
 from keras.callbacks import TensorBoard, EarlyStopping
 from keras import regularizers
 from keras.models import load_model
-from dataset import load_train_data_1C as load_train
-from dataset import load_test_data_1C as load_test
-from dataset2 import load_train_data_1C as load_train_moisy
-from dataset2 import load_test_data_1C as load_test_moisy
-from dataset import visualize_image
+from fine_dataset import load_train_data_1C as load_train
+from fine_dataset import load_test_data_1C as load_test
+from noisy_dataset import load_train_data_1C as load_train_moisy
+from noisy_dataset import load_test_data_1C as load_test_moisy
+from utils import visualize_image
 
 import matplotlib.pyplot as plt
 

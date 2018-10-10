@@ -55,7 +55,7 @@ def AutoEncoder():
     x = _conv_act_bn(x, 64)
     x = _conv_act_bn(x, 64)
     x = UpSampling2D((2, 2))(x)
-    decoded = x
+    decoded = _conv_act_bn(x, 1)
     autoencoder = Model(input_img, decoded)
     return autoencoder
 

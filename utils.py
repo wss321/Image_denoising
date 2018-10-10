@@ -9,7 +9,7 @@ def visualize_image(image, visual=True, title=''):
         plt.figure()
         plt.title(title)
         if num_dims == 2:
-            plt.imshow(image, cmap='gray')  # , interpolation='nearest'
+            plt.imshow(image, cmap='gray')
         elif num_dims == 3:
             plt.imshow(image)
         plt.show()

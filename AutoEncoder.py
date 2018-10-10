@@ -83,7 +83,7 @@ if __name__ == '__main__':
 
     autoencoder.fit(train_data_noisy, train_data,
                     epochs=10000,
-                    batch_size=16,
+                    batch_size=4,
                     shuffle=True,
                     validation_data=(test_data_noisy, test_data),
                     callbacks=callback_lists)

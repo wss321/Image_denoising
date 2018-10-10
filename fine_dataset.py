@@ -2,7 +2,7 @@ import tensorflow as tf
 import os
 import numpy as np
 
-file_dir = '../data/fine'
+file_dir = './data/fine'
 
 
 def pares_tf(example_proto):
